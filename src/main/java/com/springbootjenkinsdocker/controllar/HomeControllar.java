@@ -13,4 +13,9 @@ public class HomeControllar {
 		return s;
 	}
 
+	
+	
+	public String helloWorld() {
+		return "Hello World";
+	}
 }
