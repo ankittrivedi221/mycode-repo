@@ -8,7 +8,7 @@ ADD target/spring-boot-jenkins-docker.jar spring-boot-jenkins-docker.jar
 #port 
 EXPOSE 8080
 # java -jar /opt/app/app.jar
-ENTRYPOINT ["java","-jar","/spring-boot-jenkins-docker"]
+ENTRYPOINT ["java","-jar","spring-boot-jenkins-docker"]
 
 
 
