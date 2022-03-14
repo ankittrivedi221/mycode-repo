@@ -4,16 +4,16 @@
 # For Java 8, try this
 FROM openjdk:8-jdk-alpine
 # Refer to Maven build -> finalName
-#ADD target/spring-boot-jenkins-docker.jar spring-boot-jenkins-docker.jar
-ARG JAR_FILE=target/*.jar
-COPY ${JAR_FILE} spring-boot-jenkins-docker.jar
+ADD target/spring-boot-jenkins-docker.jar spring-boot-jenkins-docker.jar
+#ARG JAR_FILE=target/*.jar
+#COPY ${JAR_FILE} spring-boot-jenkins-docker.jar
 #port 
 EXPOSE 8080
 # java -jar /opt/app/app.jar
 
 #FROM openjdk:8-jdk-alpine
 #MAINTAINER baeldung.com
-COPY target/spring-boot-jenkins-docker.jar spring-boot-jenkins-docker.jar
+#SCOPY target/spring-boot-jenkins-docker.jar spring-boot-jenkins-docker.jar
 ENTRYPOINT ["java","-jar","/spring-boot-jenkins-docker.jar"]
 #ENTRYPOINT ["java","-jar","/spring-boot-jenkins-docker"]
 
